@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url('font/stylesheet.css')
+}
+body {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: #444;
+    background-color: #333;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+ul {   
+    margin: 0;
+    padding: 0;  
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+input {
+    width: 250px;
+    padding: 8px;
+}
+select {
+    width: 270px;
+    padding: 8px;
+}
+select, input {
+    border: 2px inset;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+
+.wraper {
+    width: 100%;
+    height: 100px;
+    /* padding: 0 30px; */
+    background-color: #007DB7;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.wraper div {
+    margin: auto;
+}
+.slogan p {
+    text-align: center;
+    color: white;
+    font: 22px 'Ubuntu', sans-serif;
+}
+.global-container {
+    position: relative;
+    margin: 50px 50px 0 50px;
+}
+.container {
+    position: relative;
+    width: auto;
+    padding: 30px;
+    /* height: 1000px; */
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 30px;
+}
+.device-title {
+    position: relative;
+    
+}
+.customize-form {
+    /* font: 18px 'Ubuntu', sans-serif; */
+    width: auto;
+}
+
+.string-item {
+    padding: 10px;
+    align-items: center;
+    display: block;
+}
+.main-table {
+    margin: 0 auto;
+}
+.parameters-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.relay-state-parameters, .sensor-state-parameters {
+    margin: 0 auto;
+    width: 40%;
+    height: 385px;
+}
+/*                          */
+/* Параметры состояния реле */
+/*                          */
+.relay-state-parameters {
+    text-align: center;
+}
+.relay-item {
+    margin: 20px 0;
+}
+.relay-description-input {
+    height: 42px;
+}
+.closed-relay {
+    margin-bottom: 0;
+}
+.LED-working-relay {
+    justify-content: center;
+    display: flex;
+}
+.indicator {
+    display: flex;
+    align-items: center;
+}
+.relay-checkbox {
+    display: flex;
+    width: auto;
+}
+.clear-relay-info {
+    display: block;
+}
+.clear-relay-info input {
+    width: 100%;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: white;
+    /* font-weight: 700; */
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 0.1s;
+    background-color: #444;
+} 
+.clear-relay-info:hover input { 
+    background: rgba(68, 68, 68, 0.699); 
+}
+.clear-relay-info:active input{ 
+    background: white; 
+}
+
+
+
+
+/*                              */
+/* Параметры состояния датчиков */
+/*                              */
+.sensor-state-parameters {
+    text-align: center;
+}
+.sensor-item {
+    margin: 20px 0;
+}
+.sensor-description-input {
+    height: 42px;
+}
+.closed-sensor {
+    margin-bottom: 0;
+}
+.LED-working-sensor {
+    justify-content: center;
+    display: flex;
+}
+.sensor-indicator {
+    display: flex;
+    align-items: center;
+}
+.sensor-checkbox {
+    display: flex;
+    width: auto;
+}
+.clear-sensor-info {
+    display: block;
+}
+.clear-sensor-info input {
+    width: 100%;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: white;
+    /* font-weight: 700; */
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 0.1s;
+    background-color: #444;
+} 
+.clear-sensor-info:hover input { 
+    background: rgba(68, 68, 68, 0.699); 
+}
+.clear-sensor-info:active input{ 
+    background: white; 
+}
+
+
+
+
+
+/*       */
+/* Футер */
+/*       */
+.buttons {
+    justify-content: center;
+    display: flex;
+}
+.click-button {
+}
+.btn {
+    width: 200px;
+    padding: 8px 40px;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 0.1s;
+    background-color: #444;
+}
+.btn:hover  { 
+    background: rgba(68, 68, 68, 0.699); 
+}
+.btn:active { 
+    background: white; 
+}
+footer {
+    line-height: 20px;
+    font: 13px 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #CCC;
+    margin: 30px;
+}

@@ -1,0 +1,67 @@
+@media screen and (max-width: 872px) {
+    .slogan p {
+        max-width: 300px;
+        font-size: 18px;
+    }    
+    .logo img {
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 560px) {
+    body {
+        font-size: 18px;
+    }
+    input {
+        width: 95%;
+        padding: 5px;
+    }
+    select {
+        width: 100%;
+        padding: 5px;
+    }
+    select, input {
+        border: 2px inset;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .LED-working-relay, .LED-working-sensor {
+        display: inline-block;
+        margin: 5px;
+    }
+    .slogan p {
+        max-width: 150px;
+        font-size: 12px;
+    } 
+    .logo img {
+        max-width: 150px;
+    }
+    .buttons {
+        display: block;
+        text-align: center;
+    }
+    .btn {
+        padding: 8px 0px;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 865px) {
+    .parameters-container {
+        display: block;
+    }
+    .relay-state-parameters, .sensor-state-parameters {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width: 1100px) {
+    .main-table {
+        display: none;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .main-ex-table {
+        display: none;
+    }
+}

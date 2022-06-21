@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New device - Livon 1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="media.css" rel="stylesheet">
+    <!-- <link href="font/fontawesome.css" rel="stylesheet"/> -->
+    <!-- <link href="font/stylesheet.css" rel="stylesheet"/> -->
+    <script src="https://kit.fontawesome.com/1cf17f5c00.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.js"></script>
+    
+    <script src="jquery.input-ip-address-control-1.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wraper">
+            <div class="logo">
+                <img src="logo.png" alt="Logotype">
+            </div>
+            <div class="slogan">
+                <p>Наши идеи расширяют Ваши возможности</p>
+            </div>
+        </div>
+    </header>
+    <div class="global-container">
+        <div class="container">
+            <div class="device-title">
+                <h1>ACS Контроллер Livon 1.0</h1>
+                <hr>
+                <h2>Назначение устройства:</h2>
+                <p>Хранение настроек в EEPROM</p>
+            </div>
+            <br>
+            <br>
+            <div>
+                <h2>Параметры устройства:</h2>
+            </div>
+            <br>
+            <div class="customize-form">
+                <form>
+                    <fieldset class="main-parameters">
+                        <legend>Основные параметры</legend>
+                        <table class="main-table">
+                            <tr>
+                                <th></th>
+                                <th>Reader name</th>
+                                <th>Reader type</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <div class="version string-item">
+                                            <label for="version">Имя/Версия прошивки</label>
+                                            <br>
+                                            <input type="text" placeholder="Livon 1.0">
+                                        </div>
+                
+                                        <div class="controller string-item">
+                                            <label for="controller">Имя контроллера</label>
+                                            <br>
+                                            <input type="text" placeholder="PAUT_001">
+                                        </div>
+                
+                                        <div class="IP string-item">
+                                            <label for="IP">Введите IP-адрес:</label>
+                                            <br>
+                                            <input type="ipv4" name="ip" class="ipv4">
+                                        </div>
+                
+                                        <div class="port string-item">
+                                            <label for="Port">Порт контроллера:</label>
+                                            <br>
+                                            <input name="Port" pattern="^[ 0-9]+$">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="readers-name">
+                                        <div class="first-reader string-item">
+                                            <label for="reader-name">Имя ридера 1</label>
+                                            <br>
+                                            <input type="text" placeholder="First reader">
+                                        </div>
+            
+                                        <div class="second-reade string-item">
+                                            <label for="reader-name">Имя ридера 2</label>
+                                            <br>
+                                            <input type="text" placeholder="Second reader">
+                                        </div>
+            
+                                        <div class="third-reader string-item">
+                                            <label for="reader-name">Имя ридера 3</label>
+                                            <br>
+                                            <input type="text" placeholder="Third reader">
+                                        </div>
+            
+                                        <div class="fourth-reader string-item">
+                                            <label for="reader-name">Имя ридера 4</label>
+                                            <br>
+                                            <input type="text" placeholder="Fourth reader">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="readers-type">
+                                        <div class="first-reader-type string-item">
+                                            <label for="reader-type">Тип ридера 1</label>
+                                            <br>
+                                            <select class="first-reader-type">
+                                                <option placeholder="Wiegand26'">Wiegand26</option>
+                                                <option >Wiegand34</option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="second-reader-type string-item">
+                                            <label for="reader-type">Тип ридера 2</label>
+                                            <br>
+                                            <select>
+                                                <option placeholder="Wiegand26'">Wiegand26</option>
+                                                <option >Wiegand34</option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="third-reader-type string-item">
+                                            <label for="reader-type">Тип ридера 3</label>
+                                            <br>
+                                            <select>
+                                                <option placeholder="Wiegand26'">Wiegand26</option>
+                                                <option >Wiegand34</option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="fourth-reader-type string-item">
+                                            <label for="reader-type">Тип ридера 4</label>
+                                            <br>
+                                            <select>
+                                                <option value="Wiegand26'">Wiegand26</option>
+                                                <option >Wiegand34</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <div class="main-ex-table">
+                            <div>
+                                <div class="version string-item">
+                                    <label for="version">Имя/Версия прошивки</label>
+                                    <br>
+                                    <input type="text" placeholder="Livon 1.0">
+                                </div>
+        
+                                <div class="controller string-item">
+                                    <label for="controller">Имя контроллера</label>
+                                    <br>
+                                    <input type="text" placeholder="PAUT_001">
+                                </div>
+        
+                                <div class="IP string-item">
+                                    <label for="IP">Введите IP-адрес:</label>
+                                    <br>
+                                    <input type="ipv4" name="ip" class="ipv4">
+                                </div>
+        
+                                <div class="port string-item">
+                                    <label for="Port">Порт контроллера:</label>
+                                    <br>
+                                    <input name="Port" pattern="^[ 0-9]+$">
+                                </div>
+                            </div>
+                            <div class="readers-name">
+                                <div class="first-reader string-item">
+                                    <label for="reader-name">Имя ридера 1</label>
+                                    <br>
+                                    <input type="text" placeholder="First reader">
+                                </div>
+    
+                                <div class="second-reade string-item">
+                                    <label for="reader-name">Имя ридера 2</label>
+                                    <br>
+                                    <input type="text" placeholder="Second reader">
+                                </div>
+    
+                                <div class="third-reader string-item">
+                                    <label for="reader-name">Имя ридера 3</label>
+                                    <br>
+                                    <input type="text" placeholder="Third reader">
+                                </div>
+    
+                                <div class="fourth-reader string-item">
+                                    <label for="reader-name">Имя ридера 4</label>
+                                    <br>
+                                    <input type="text" placeholder="Fourth reader">
+                                </div>
+                            </div>
+                            <div class="readers-type">
+                                <div class="first-reader-type string-item">
+                                    <label for="reader-type">Тип ридера 1</label>
+                                    <br>
+                                    <select class="first-reader-type">
+                                        <option placeholder="Wiegand26'">Wiegand26</option>
+                                        <option >Wiegand34</option>
+                                    </select>
+                                </div>
+    
+                                <div class="second-reader-type string-item">
+                                    <label for="reader-type">Тип ридера 2</label>
+                                    <br>
+                                    <select>
+                                        <option placeholder="Wiegand26'">Wiegand26</option>
+                                        <option >Wiegand34</option>
+                                    </select>
+                                </div>
+    
+                                <div class="third-reader-type string-item">
+                                    <label for="reader-type">Тип ридера 3</label>
+                                    <br>
+                                    <select>
+                                        <option placeholder="Wiegand26'">Wiegand26</option>
+                                        <option >Wiegand34</option>
+                                    </select>
+                                </div>
+    
+                                <div class="fourth-reader-type string-item">
+                                    <label for="reader-type">Тип ридера 4</label>
+                                    <br>
+                                    <select>
+                                        <option value="Wiegand26'">Wiegand26</option>
+                                        <option >Wiegand34</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                    </fieldset>
+                    <br>
+                    <br>
+                    <div class="parameters-container">
+                        <fieldset class="relay-state-parameters">
+                            <legend>Параметры состояния реле</legend>
+                            <div class="relay-description-input relay-item">
+                                <p>Число отображающее BitMask реле</p>
+                            </div>
+                            <div class="relay relay-item">
+                                Ввод десятичного числа:<br><input type="number" name="x" placeholder="Введите число от 0 до 255"
+                                class="only-positive">
+                            </div>
+                            <!-- <div class="result relay-item">
+                                Результат двоичное число:<br><input type="text" disabled name="Результат">
+                            </div> -->
+                            <p class="relay-item closed-relay">Состояние реле: </p>
+                            <div class="relay-item LED-working-relay">
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">1</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">2</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">3</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">4</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                            </div>
+                            <div class="relay-item LED-working-relay">
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">5</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">6</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">7</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                                <div class="indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">8</label>
+                                    <input type="checkbox" class="relay-checkbox">
+                                </div>
+                            </div>
+                            <div class="clear-relay-info relay-item">
+                                <input type="button" value=Сброс onclick="ResetBlock(this)">
+                            </div>
+                        </fieldset>
+                        <br>
+                        <br>
+                        <fieldset class="sensor-state-parameters">
+                            <legend>Параметры состояния датчика</legend>
+                            <div class="sensor-description-input sensor-item">
+                                <p>Число отображающее BitMask датчика</p>
+                            </div>
+                            <div class="sensor sensor-item">
+                                Ввод десятичного числа:<br><input type="number" name="y" placeholder="Введите число от 0 до 255" class="only-positive">
+                            </div>
+                            <!-- <div class="result relay-item">
+                                Результат двоичное число:<br><input type="text" disabled name="Результат">
+                            </div> -->
+                            <p class="sensor-item closed-sensor">Состояние датчика: </p>
+                            <div class="sensor-item LED-working-sensor">
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">1</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">2</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">3</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">4</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                            </div>
+                            <div class="sensor-item LED-working-sensor">
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">5</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">6</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">7</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                                <div class="sensor-indicator">
+                                    <i class="fa fa-microchip fa-1x" aria-hidden="true"></i>
+                                    <label for="checkbox">8</label>
+                                    <input type="checkbox" class="sensor-checkbox">
+                                </div>
+                            </div>
+                            <div class="clear-sensor-info sensor-item">
+                                <input type="button" value=Сброс onclick="ResetBlock(this)">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div class="buttons">
+                        <a href="#" class="click-button"><button type="submit" value="Сохранить" class="btn">Сохранить</button></a><br>
+                        <a href="#" onclick="location.reload(); return false;" class="click-button"><button type="refresh" value="Обновить" class="btn">Обновить</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2020 ООО «Интерактивные Технологии»<br>
+        Перепечатка и распространение материалов с сайта разрешена только при согласии авторов.
+    </footer>
+       
+<script src="MySite.js"></script>
+</body>
+
