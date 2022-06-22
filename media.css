@@ -1,12 +1,4 @@
-@media screen and (max-width: 872px) {
-    .slogan p {
-        max-width: 300px;
-        font-size: 18px;
-    }    
-    .logo img {
-        max-width: 200px;
-    }
-}
+
 @media screen and (max-width: 560px) {
     body {
         font-size: 18px;
@@ -44,6 +36,14 @@
         width: 70%;
     }
 }
+@media screen and (max-width: 600px) {
+    .global-container {
+        margin: 20px 20px 0 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
 @media screen and (max-width: 865px) {
     .parameters-container {
         display: block;
@@ -53,8 +53,19 @@
         width: auto;
         height: auto;
     }
-    
 }
+@media screen and (max-width: 872px) {
+    .slogan p {
+        max-width: 300px;
+        font-size: 18px;
+    }    
+    .logo img {
+        max-width: 200px;
+    }
+}
+
+
+/* Отображение в виде таблицы или списка */
 @media screen and (max-width: 1100px) {
     .main-table {
         display: none;
@@ -65,3 +76,4 @@
         display: none;
     }
 }
+/* Отображение в виде таблицы или списка */
